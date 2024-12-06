@@ -7,6 +7,12 @@ body {
     line-height: 1.6;
 }
 
+.banner {
+    width: 100%; /* Make the banner stretch the full width */
+    height: 200px; /* Set a specific height for the rectangle shape */
+    object-fit: cover; /* Ensure the image covers the space proportionally */
+}
+
 header {
     background-color: #2c2c3e;
     text-align: center;

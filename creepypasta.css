@@ -12,10 +12,17 @@ header {
     text-align: center;
     padding: 20px;
     position: relative;
+    margin-bottom: 10px; 
 }
 
 header h1 {
     margin: 0;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    margin-top: 10px; /* Tambahkan jarak atas untuk memastikan tidak bertabrakan */
 }
 
 /* Untuk layar kecil */

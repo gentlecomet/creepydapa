@@ -18,6 +18,18 @@ header h1 {
     margin: 0;
 }
 
+/* Untuk layar kecil */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em; /* Kurangi ukuran font untuk layar kecil */
+        margin-bottom: 15px; /* Beri jarak lebih kecil di layar kecil */
+    }
+
+    .search-bar {
+        margin-top: 15px; /* Tambahkan lebih banyak jarak pada layar kecil */
+    }
+}
+
 .search-bar {
     position: absolute;
     top: 10px;

@@ -111,11 +111,20 @@ nav ul li a.active {
    margin-bottom :10 px ;
 }
 
+/* Ukuran gambar default untuk layar besar */
 .container .legend img {
-    width: 250px; /* Ukuran lebar gambar tetap */
-    height: 250px; /* Ukuran tinggi gambar tetap */
-    object-fit: cover; /* Menjaga gambar agar tetap proporsional */
-    border-radius: 10px; /* Opsional, untuk membuat gambar lebih menarik */
+    width: 250px; /* Ukuran default */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Media query untuk layar kecil (smartphone) */
+@media (max-width: 768px) {
+    .container .legend img {
+        width: 150px; /* Ukuran yang lebih kecil untuk layar kecil */
+        height: 150px;
+    }
 }
 
 

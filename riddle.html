@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle</title>
+    <link rel="stylesheet" href="creepypasta.css">
+    <script src="creepypasta.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Riddle</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Cari riddle..." onkeyup="searchLegends()">
+        </div>
+    </header>
+
+    <nav>
+        <ul id="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="creepypasta.html">Creepypasta dan Urban Legend</a></li>
+            <li><a class="active" href="riddle.html">Riddle</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <ul id="page">
+            <li><a href="riddle.html" class="active">1</a></li>
+            <li><a href="riddle2.html">2</a></li>
+            <li><a href="riddle3.html">3</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="legend">
+            <h2>1. Suara dari Dalam Kamar</h2>
+            <p>Kamu baru saja pindah ke rumah tua yang sepi. Setiap malam, kamu mendengar suara bisikan lembut dari dalam kamar. 
+                Suara itu memanggil namamu dan meminta kamu untuk datang lebih dekat. Suatu malam, rasa ingin tahumu mengalahkan ketakutanmu, dan kamu mengikuti suara itu. 
+                Ketika kamu membuka pintu kamar, apa yang kamu lihat? 
+                Apa yang terjadi selanjutnya?<span class="more" id="riddle1" style="color: lightgreen;">
+                    Kamu melihat dirimu sendiri, tetapi dengan senyum mengerikan dan mata kosong. Ternyata, itu adalah bayangan jiwamu yang terperangkap, berusaha menarikmu ke dalam kegelapan.</span></p>
+            <button onclick="toggleReadMore('riddle1', this)">Lihat Jawaban</button>
+        </div>
+
+        <div class="legend">
+            <h2>2. Catatan Terakhir</h2>
+            <p>Di sebuah perpustakaan tua, kamu menemukan sebuah buku dengan catatan terakhir di dalamnya: "Jika kamu membaca ini, sudah terlambat." 
+                Ketika kamu membuka halaman pertama, semua lampu padam dan suasana menjadi gelap gulita. Kamu merasa ada sesuatu yang mengawasi dari kegelapan. 
+                Apa yang harus kamu lakukan?<span class="more" id="riddle2" style="color: lightgreen;">
+                    Tutup buku itu secepat mungkin dan tinggalkan perpustakaan; karena setiap orang yang membaca catatan tersebut tidak pernah terlihat lagi.</span></p>
+            <button onclick="toggleReadMore('riddle2', this)">Lihat Jawaban</button>
+        </div>
+
+        <div class="legend">
+            <h2>3. Telepon Misterius</h2>
+            <p>Suatu malam, telepon rumahmu berdering. Ketika kamu mengangkatnya, suara di ujung sana berkata: "Aku tahu apa yang kau lakukan." 
+                Kamu merasa ketakutan dan menutup teleponnya. Namun, telepon itu terus berdering setiap malam dengan pesan yang sama. 
+                Apa yang terjadi ketika kamu memutuskan untuk tidak menjawab lagi?<span class="more" id="riddle3" style="color: lightgreen;">
+                    Suara itu berhenti, tetapi keesokan harinya kamu menemukan catatan di depan pintu yang bertuliskan: "Sekarang aku tahu di mana kau tinggal."</span></p>
+            <button onclick="toggleReadMore('riddle3', this)">Lihat Jawaban</button>
+        </div>
+
+        <div class="legend">
+            <h2>4. Bayangan di Cermin</h2>
+            <p>Kamu berdiri di depan cermin saat tengah malam dan melihat bayanganmu tersenyum meskipun wajahmu datar. 
+                Ketika kamu berbalik untuk pergi, bayangan itu tetap tersenyum lebar dan mulai bergerak sendiri. Apa yang harus kamu lakukan?<span class="more" id="riddle4" style="color: lightgreen;">
+                    Jangan pernah membelakangi cermin; bayanganmu telah mengambil alih tubuhmu dan sekarang ia bebas sementara kau terperangkap di dalam cermin.</span></p>
+            <button onclick="toggleReadMore('riddle4', this)">Lihat Jawaban</button>
+        </div>
+
+        <div class="legend">
+            <h2>5. Kunci Terlarang</h2>
+            <p>Kamu menemukan sebuah kunci tua di loteng rumahmu dengan tulisan: "Jangan gunakan kunci ini." Namun rasa ingin tahumu mendorongmu untuk mencobanya pada pintu terkunci di basement. 
+                Apa yang terjadi setelah kamu membuka pintu tersebut?<span class="more" id="riddle5" style="color: lightgreen;">
+                    Kamu membuka pintu dan menemukan dirimu sendiri terkurung di dalamnya; ternyata kunci itu adalah kunci untuk membebaskan dirimu dari penjara waktu.</span></p>
+            <button onclick="toggleReadMore('riddle5', this)">Lihat Jawaban</button>
+        </div>
+    </div>
+
+    <div class="comments-section" align="center">
+        <form id="commentForm">
+            <textarea id="commentInput" placeholder="Tinggalkan komentar..." rows="4" required></textarea><br>
+            <button type="submit">Kirim Komentar</button>
+        </form>
+        <div id="commentsList"></div>
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Dibuat dengan <span style="color: #ff6363">&#9829;</span> oleh Dapa.</p>
+    </footer>
+
+</body>
+</html>

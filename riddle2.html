@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle - Halaman 2</title>
+    <link rel="stylesheet" href="creepypasta.css">
+    <script src="creepypasta.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Riddle</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Cari riddle..." onkeyup="searchLegends()">
+        </div>
+    </header>
+
+    <nav>
+        <ul id="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="creepypasta.html">Creepypasta dan Urban Legend</a></li>
+            <li><a class="active" href="riddle.html">Riddle</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <ul id="page">
+            <li><a href="riddle.html">1</a></li>
+            <li><a href="riddle2.html" class="active">2</a></li>
+            <li><a href="riddle3.html">3</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="legend">
+            <h2>6. Boneka yang Hidup</h2>
+            <p>Sebuah boneka tua ditemukan di loteng rumahmu. Setiap kali kamu meninggalkan ruangan, boneka itu tampak bergeser posisinya. 
+                Suatu malam, kamu terbangun mendengar suara tawa anak kecil. Ketika kamu membuka mata, boneka itu sudah berada di samping tempat tidurmu. 
+                Apa yang harus kamu lakukan untuk menyingkirkan boneka ini?<span class="more" id="riddle6" style="color: lightgreen;">
+                    Untuk menyingkirkan boneka ini, kamu harus menyimpannya di tempat yang tidak pernah kamu lihat lagi, karena ia akan terus kembali jika kamu masih melihatnya.</span></p>
+            <button onclick="toggleReadMore('riddle6', this)">Lihat Jawaban</button>
+        </div>
+
+        <div class="legend">
+            <h2>7. Jam yang Menangis</h2>
+            <p>Di sebuah rumah tua, ada jam dinding yang selalu berbunyi pada tengah malam. Suatu malam, jam itu berhenti berdetak dan suara isak tangis terdengar dari dalamnya. 
+                Ketika kamu mendekat, jam itu terbuka dan terlihat foto seseorang yang hilang bertahun-tahun lalu. Apa yang sebenarnya terjadi?<span class="more" id="riddle7" style="color: lightgreen;">
+                    Jam itu adalah penjara bagi jiwa orang yang hilang; setiap kali ia menangis, itu adalah panggilan untuk membebaskan dirinya.</span></p>
+            <button onclick="toggleReadMore('riddle7', this)">Lihat Jawaban</button>
+        </div>
+
+        <div class="legend">
+            <h2>8. Tamu Tak Terlihat</h2>
+            <p>Kamu mendengar pintu depan diketuk tiga kali. Saat kamu membuka pintu, tidak ada siapa pun di luar. 
+                Tapi ketika kamu menutup pintu, kamu merasakan hembusan angin dingin dan suara bisikan di telingamu: "Aku di sini." 
+                Siapakah tamu tak terlihat itu?<span class="more" id="riddle8" style="color: lightgreen;">
+                    Tamu tak terlihat itu adalah roh dari seseorang yang pernah tinggal di rumah tersebut; ia mencari seseorang untuk mendengarkan kisahnya.</span></p>
+            <button onclick="toggleReadMore('riddle8', this)">Lihat Jawaban</button>
+        </div>
+
+        <div class="legend">
+            <h2>9. Jejak Kaki Tanpa Pemilik</h2>
+            <p>Setelah hujan deras, jejak kaki ditemukan di taman menuju pintu depan rumahmu, tetapi tidak ada jejak keluar. 
+                Ketika kamu mengikuti jejak tersebut, kamu menemukan dirimu sendiri sedang berdiri di depan cermin dengan ekspresi ketakutan. 
+                Apa yang terjadi?<span class="more" id="riddle9" style="color: lightgreen;">
+                    Jejak kaki itu adalah refleksi dari jiwamu yang terjebak; saat kamu mengikuti jejak itu, kamu sebenarnya sedang berjalan menuju kegelapan dalam dirimu sendiri.</span></p>
+            <button onclick="toggleReadMore('riddle9', this)">Lihat Jawaban</button>
+        </div>
+
+        <div class="legend">
+            <h2>10. Cermin yang Mengawasi</h2>
+            <p>Sebuah cermin tua di kamarmu tiba-tiba menghilang. Keesokan harinya, kamu menemukannya di loteng, tetapi refleksi di cermin itu menunjukkan dirimu sedang berbicara dengan seseorang di belakangmu. 
+                Namun ketika kamu berbalik, tidak ada siapa-siapa di sana. Apa yang sebenarnya terjadi?<span class='more' id='riddle10' style='color: lightgreen;'>
+                    Cermin itu telah mengambil gambaran dari dunia lain; apa yang terlihat adalah bayangan dari entitas lain yang ingin berkomunikasi denganmu.</span></p>  
+             <button onclick='toggleReadMore("riddle10", this)'>Lihat Jawaban</button>  
+          </div>  
+      </div>  
+
+      <div class="comments-section" align="center">
+        <form id="commentForm">
+            <textarea id="commentInput" placeholder="Tinggalkan komentar..." rows="4" required></textarea><br>
+            <button type="submit">Kirim Komentar</button>
+        </form>
+        <div id="commentsList"></div>
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+      <footer>  
+         <p>&copy; 2024 - Dibuat dengan <span style='color: #ff6363'>&#9829;</span> oleh Dapa.</p>  
+      </footer>  
+
+  </body>  
+  </html>  

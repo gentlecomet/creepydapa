@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle - Halaman 3</title>
+    <link rel="stylesheet" href="creepypasta.css">
+    <script src="creepypasta.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Riddle</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Cari riddle..." onkeyup="searchLegends()">
+        </div>
+    </header>
+
+    <nav>
+        <ul id="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="creepypasta.html">Creepypasta dan Urban Legend</a></li>
+            <li><a class="active" href="riddle.html">Riddle</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <ul id="page">
+            <li><a href="riddle.html">1</a></li>
+            <li><a href="riddle2.html">2</a></li>
+            <li><a href="riddle3.html" class="active">3</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="legend">
+            <h2>11. Tangan dari Dinding</h2>
+            <p>Di dinding rumahmu, muncul cetakan tangan yang tidak kamu kenali. Setiap malam, cetakan tangan itu tampak semakin banyak. 
+                Bagaimana mereka bisa muncul?<span class="more" id="riddle11" style="color: lightgreen;">
+                    Cetakan tangan muncul karena ada entitas gaib yang berusaha untuk keluar dari dinding, atau bisa juga karena adanya energi negatif yang terperangkap di dalam rumah.</span></p>
+            <button onclick="toggleReadMore('riddle11', this)">Lihat Jawaban</button>
+        </div>
+
+        <div class="legend">
+            <h2>12. Suara di Telepon</h2>
+            <p>Kamu menerima telepon dari nomor yang tidak dikenal. Saat kamu mengangkat, suara di seberang bertanya, “Apakah kamu sendirian di rumah?”. 
+                Ketika kamu menjawab, suara itu berkata, “Kalau begitu siapa yang ada di belakangmu?”<span class="more" id="riddle12" style="color: lightgreen;">
+                    Suara di telepon berasal dari makhluk halus atau entitas yang mengawasi kamu, dan pertanyaan itu menunjukkan bahwa mereka memang ada di belakangmu.</span></p>
+            <button onclick="toggleReadMore('riddle12', this)">Lihat Jawaban</button>
+        </div>
+
+        <div class="legend">
+            <h2>13. Bayangan di Jendela</h2>
+            <p>Bayangan seorang pria terlihat berdiri di luar jendela rumahmu. Tapi saat kamu pergi memeriksa, tidak ada siapa pun di sana. 
+                Bagaimana bayangan itu muncul?<span class="more" id="riddle13" style="color: lightgreen;">
+                    Bayangan pria itu mungkin adalah roh atau hantu yang sedang mengawasi kamu, atau bisa jadi ilusi optik akibat cahaya dan bayangan dari lingkungan sekitar.</span></p>
+            <button onclick="toggleReadMore('riddle13', this)">Lihat Jawaban</button>
+        </div>
+
+        <div class="legend">
+            <h2>14. Langkah di Loteng</h2>
+            <p>Kamu mendengar langkah kaki di loteng rumah, tetapi saat diperiksa, tidak ada siapa pun di sana. Ketika kamu kembali ke kamar, pintu loteng terlihat terbuka. Siapa yang membuka pintu itu?<span class="more" id="riddle14" style="color: lightgreen;">
+                Pintu loteng dibuka oleh makhluk halus atau entitas yang tidak terlihat, yang mungkin sudah lama menghuni rumah tersebut.</span></p>
+            <button onclick="toggleReadMore('riddle14', this)">Lihat Jawaban</button>
+        </div>
+
+        <div class="legend">
+            <h2>15. Lukisan Tua</h2>
+            <p>Lukisan di ruang tamu menunjukkan seorang wanita tua tersenyum. Tapi keesokan harinya, senyumnya berubah menjadi ekspresi marah. 
+                Apa yang terjadi dengan lukisan itu?<span class="more" id="riddle15" style="color: lightgreen;">
+                    Perubahan ekspresi pada lukisan terjadi karena lukisan tersebut terpengaruh oleh emosi negatif atau kejadian buruk yang terjadi di rumah, atau bisa jadi lukisan itu memiliki kekuatan gaib yang mencerminkan suasana hati penghuni rumah.</span></p>
+            <button onclick="toggleReadMore('riddle15', this)">Lihat Jawaban</button>
+        </div>
+    </div>
+
+    <div class="comments-section" align="center">
+        <form id="commentForm">
+            <textarea id="commentInput" placeholder="Tinggalkan komentar..." rows="4" required></textarea><br>
+            <button type="submit">Kirim Komentar</button>
+        </form>
+        <div id="commentsList"></div>
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Dibuat dengan <span style="color: #ff6363">&#9829;</span> oleh Dapa.</p>
+    </footer>
+
+</body>
+</html>

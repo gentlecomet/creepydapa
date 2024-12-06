@@ -111,6 +111,14 @@ nav ul li a.active {
    margin-bottom :10 px ;
 }
 
+.container .legend img {
+    width: 250px; /* Ukuran lebar gambar tetap */
+    height: 250px; /* Ukuran tinggi gambar tetap */
+    object-fit: cover; /* Menjaga gambar agar tetap proporsional */
+    border-radius: 10px; /* Opsional, untuk membuat gambar lebih menarik */
+}
+
+
 .comments-section {
     margin: 20px auto;
     width: 80%;

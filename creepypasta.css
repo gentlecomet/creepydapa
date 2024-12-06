@@ -12,29 +12,10 @@ header {
     text-align: center;
     padding: 20px;
     position: relative;
-    margin-bottom: 10px; 
 }
 
 header h1 {
     margin: 0;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.search-bar {
-    margin-top: 10px; /* Tambahkan jarak atas untuk memastikan tidak bertabrakan */
-}
-
-/* Untuk layar kecil */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.5em; /* Kurangi ukuran font untuk layar kecil */
-        margin-bottom: 15px; /* Beri jarak lebih kecil di layar kecil */
-    }
-
-    .search-bar {
-        margin-top: 15px; /* Tambahkan lebih banyak jarak pada layar kecil */
-    }
 }
 
 .search-bar {

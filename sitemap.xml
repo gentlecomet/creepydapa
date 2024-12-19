@@ -1,1 +1,31 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://gentlecomet.github.io/creepydapa/index.html</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://gentlecomet.github.io/creepydapa/creepypasta.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gentlecomet.github.io/creepydapa/creepypasta2.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gentlecomet.github.io/creepydapa/creepypasta3.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gentlecomet.github.io/creepydapa/riddle.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gentlecomet.github.io/creepydapa/riddle2.html</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://gentlecomet.github.io/creepydapa/riddle3.html</loc>
+        <priority>0.6</priority>
+    </url>
+</urlset>

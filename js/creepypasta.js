@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    if (window.location.pathname.endsWith("home.html") || window.location.pathname === "/") {
+    if (window.location.pathname.endsWith("index.html") || window.location.pathname === "/") {
         const response = confirm("Apakah kamu sedang sendirian?");
         if (response) {
             alert("Hati-hati, jangan lupa periksa sekelilingmu...");
@@ -72,7 +72,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     function renderComments(page) {
         const comments = JSON.parse(localStorage.getItem("comments")) || [];
-        commentsList.innerHTML = ""; // Bersihkan daftar komentar
+        commentsList.innerHTML = ""; 
         const start = (page - 1) * commentsPerPage;
         const end = start + commentsPerPage;
 
